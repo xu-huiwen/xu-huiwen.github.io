@@ -1,0 +1,656 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: 0;
+	text-decoration: none;
+	font-size: 14px;
+	color: #FFF;
+	font: "微软雅黑";
+}
+.catain{
+	width: 80%;
+	margin: 0 auto;
+}
+#cover{
+	width: 100%;
+	background-image: url(../image/1.jpg);
+	overflow: hidden;
+}
+.index{
+	width: 100%;
+	height: 675px;
+	background: rgba(0,0,0,0.4);
+	position: relative;
+}
+#yinyue img{
+	position: absolute;
+	right: 2%;
+	top: 4%;
+	width: 2%;
+	animation: xuanzhuan2 5s linear infinite; 
+}
+@keyframes xuanzhuan2{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+.index .jianjie{
+	width: 5%;
+	height: 50%;
+	position: absolute;
+	top: 30%;
+	left: 10%;
+	font-size:50px;
+	opacity: 1;
+	transform-origin: center center;
+	animation: jianjie 2s linear 1;
+	transition: all 3s;
+}
+.index .jianjie span{
+	font-family: "Airal";
+}
+@keyframes jianjie{
+	from{
+		transform: rotateY(0deg);
+		opacity: 0;
+	}
+	to{
+		transform: rotateY(360deg);
+		opacity: 1;
+	}
+}
+.logo{
+	width: 23%;
+	height: 30%;
+	position: absolute;
+	left: 40%;
+	top: 40%;
+	position: relative;
+	transition: all 3s;
+	animation: xuanzhuan 10s linear infinite; 
+}
+@keyframes xuanzhuan{
+	from{
+		transform: rotate(0deg);
+		opacity: 0;
+	}
+	to{
+		transform: rotate(360deg);
+		opacity: 1;
+	}
+}
+@keyframes xuanzhuan1{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(0deg);
+	}
+}
+.logo:hover{
+	animation: xuanzhuan1 10s linear infinite; 
+}
+
+.logo img{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: scale(1);
+	margin: 0 auto;
+	margin-left:-8% ;
+	/*animation: xuanzhuan 1s ease inherit; */
+}
+.logo a:hover{
+	color: deepskyblue;
+}
+.logo .lo1{
+	position: absolute;
+	left: 0%;
+	top: 50%;
+	font-weight: bold;
+}
+.logo .lo2{
+	position: absolute;
+	left: 40%;
+	top: 0%;
+	font-weight: bold;
+}
+.logo .lo3{
+	position: absolute;
+	left: 40%;
+	bottom: 0%;
+	font-weight: bold;
+}
+.logo .lo4{
+	position: absolute;
+	right: 0%;
+	top: 50%;
+	font-weight: bold;
+}
+#xushu{
+	position: absolute;
+	bottom: 5%;
+	left: 40%;
+}
+#xushu .xus1{
+	font-weight: bold;
+	font-size: 18px;
+	transition: all 3s;
+	/*opacity:0 ;*/
+	transform: scale(0.1);
+	animation: xianshi 3s linear 1;
+}
+#xushu .xus2{
+	transition: all 3.5s;
+	/*opacity:0 ;*/
+	transform: scale(0.1);
+	animation: xianshi 2s linear 1;
+}
+#xushu .xus3{
+	font-weight: bold;
+	font-size: 18px;
+	transition: all 3s;
+	/*opacity:0 ;*/
+	transform: scale(0.1);
+	animation: xianshi 3s linear 1;
+	
+}
+@keyframes xianshi{
+	from{
+		opacity: 0;
+		transform: scale(0.1);
+	}
+	to{
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+/*2*/
+#perpson{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+#perpson .jianbg{
+	/*background: url(../image/5.jpg);*/
+}
+#perpson .bg{
+	width: 100%;
+	height:300Px;
+	background: #00BFFF;
+}
+#perpson .bg .titl{
+	padding-top: 10px;
+	color: #FFF;
+	font-family: "微软雅黑";
+	font-size: 20px;
+}
+#perpson .bg .pert{
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+}
+#perpson .perleft{
+	float: left;
+	width: 30%;
+	height: 300px;
+	position: relative;
+}
+#perpson .perleft .perimg{
+	position: absolute;
+	left: 50%;
+	top: 15%;
+	width: 100px;
+	height: 100px;
+	border: 3px solid #000;
+	border-radius: 50%;
+	background: url(../image/1.jpg);
+}
+#perpson .perleft h1:nth-of-type(1){
+	position: absolute;
+	left: 55%;
+	top:60%;
+}
+#perpson .perleft h1:nth-of-type(2){
+	position: absolute;
+	left: 55%;
+	top:68%;
+}
+#perpson .perleft h1:nth-of-type(3){
+	position: absolute;
+	left: 55%;
+	top:76%;
+}
+#perpson .perright{
+	float: left;
+	width: 70%;
+	height: 300px;
+}
+#perpson .perright ul li{
+	float: left;
+	width: 50%;
+	height: 130px;
+}
+#perpson .perright ul .qq{
+	margin-top: 40px;
+}
+#perpson .perright ul .weixin{
+	margin-top: 40px;
+}
+#perpson .perb{
+	width: 100%;
+	height:auto;
+	overflow: hidden;
+}
+#perpson .perb .titl{
+	color: #000;
+	font-family: "微软雅黑";
+	font-size: 20px;
+	padding-top: 10px;
+	background: url(../image/13.png)no-repeat;
+	background-size: 100px;
+	background-position-y: bottom;
+	padding-right: 50px;
+}
+#perpson .perb ul{
+	margin: 0 auto;
+}
+#perpson .perb ul li{
+	float: left;
+	width: 40%;
+	height: 200px;
+	padding-left: 10%;
+	margin-top: 5%;
+}
+#perpson .perb ul li .pict{
+	color: #000;
+	float: left;
+	margin-left: 10px;
+}
+#perpson .perb ul li .pict h3,p{
+	color: #000;
+}
+#perpson .perb .jine{
+	float: left;
+}
+#perpson .perb .jine1{
+	width: 100px;
+	height: 100px;
+	background: #3069BD;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 100px;
+	font-weight: bold;
+	font-size: 18px;
+}
+#perpson .perb .jine2{
+	width: 100px;
+	height: 100px;
+	background: #3A3075;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 100px;
+	font-weight: bold;
+	font-size: 18px;
+}
+#perpson .perb .jine3{
+	width: 100px;
+	height: 100px;
+	background: #FCAC39;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 100px;
+	font-weight: bold;
+	font-size: 18px;
+}
+#perpson .perb .jine4{
+	width: 100px;
+	height: 100px;
+	background: #68C61A;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 100px;
+}
+/*3*/
+#opus{
+	overflow: hidden;
+}
+#opus .titl{
+	padding-top: 10px;
+	color: #000;
+	font-family: "微软雅黑";
+	font-size: 20px;
+	background: url(../image/9.png)no-repeat;
+	background-size: 50px;
+}
+#opus .catain{
+	width: 80%;
+	margin: 0 auto;
+}
+#opus li{
+	padding-top: 10px;
+	width: 25%;
+	height: auto;
+	float: left;
+	padding-left:6%;
+	padding-bottom: 5%;
+}
+#opus li img{
+	width: 100%;
+	border: 1px solid #ccc;
+}
+#opus li h1,h3{
+	color: #A5A5A5;
+	text-align: center;
+}
+/*4*/
+.contant{
+	width: 100%;
+	height: auto;
+	padding-top: 10px;
+	overflow: hidden;
+	
+}
+.contant h1{
+	color: #000;
+	text-align: center;
+}
+.contant h1 span{
+	padding-top: 5px;
+	color: #000;
+	font-size: 20px;
+	padding-bottom: 10px;
+	background: url(../image/12.png)no-repeat;
+    background-size: 70px;
+}
+.contant .cotleft{
+	float: left;
+	width: 80%;
+	height: auto;
+}
+.contant .cotleft strong{
+	margin-top: 30px;
+	font-size: 18px;
+	color: #000;
+}
+.contant .cotleft .wenben{
+	margin-top: 20px;
+}
+.contant .cotleft .wenben input{
+	display: block;
+	color: #CCC;
+	width: 100%;
+	height: 50%;
+	padding-bottom: 25px;
+	margin-bottom: 5px;
+	border: 1px solid #CCC;
+}
+.contant .cotleft .wenben .liuyankuang{
+	padding-bottom: 35px;
+}
+.contant .cotleft .an{
+	width: 8%;
+	height: 5%;
+	background: #00BFFF;
+	text-align: center;
+}
+.contant .cotleft .an:hover{
+	background: blue;
+}
+.contant .cotright{
+	float: left;
+	width: 20%;
+	height: auto;
+}
+.contant .cotright h1{
+	margin-top: 50px;
+	margin-bottom: 30px;
+	background: #FFF;
+}
+.contant .cotright p{
+	margin-bottom: 20px;
+	margin-left: 30px;
+}
+/*底部*/
+.bottomn{
+	background: #00BFFF;
+	width: 100%;
+	height: 200px;
+	position: relative;
+	margin-top: 30px;
+}
+.bottomn div{
+	position: absolute;
+	top: 30%;
+	left: 45%;
+	margin: 0 auto;
+	width: 10%;
+	height: 60%;
+	text-align: center;
+}
+.bottomn p{
+	color: #fff;
+	font-size: 12px;
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	.index{
+		height: 400px;
+	}
+	.index .jianjie{
+		width: 3%;
+		font-size: 30px;
+	}
+	.logo{
+		width: 26%;
+		height: 50%;
+		top: 30%;
+	}
+	#xushu{
+		left: 35%;
+	}
+	#perpson .perleft{
+		width: 100%;
+	}
+	#perpson .perleft .perimg{
+		left: 10%;
+	}
+	#perpson .perleft h1:nth-of-type(1){
+	position: absolute;
+	left: 40%;
+	top:20%;
+}
+#perpson .perleft h1:nth-of-type(2){
+	position: absolute;
+	left: 40%;
+	top:28%;
+}
+#perpson .perleft h1:nth-of-type(3){
+	position: absolute;
+	left:40%;
+	top:36%;
+}
+#perpson .bg{
+	height: auto;
+}
+#perpson .bg .pert{
+	height: auto;
+}
+
+#perpson .perright{
+	width: 100%;
+}
+	#perpson .bg .catain .pert .perleft h1{
+		float: left;
+	}
+	#perpson .perb ul li{
+		position: relative;
+	}
+	#perpson .perb .jine1{
+		position: absolute;
+		top: 5%;
+		left: 50%;
+	}
+	#perpson .perb .jine2{
+		position: absolute;
+		top: 5%;
+		left: 50%;
+	}
+	#perpson .perb .jine3{
+		position: absolute;
+		top: 5%;
+		left: 50%;
+	}
+	#perpson .perb .jine4{
+		position: absolute;
+		top: 5%;
+		left: 50%;
+	}
+	#perpson .perb ul li .pict{
+		position: absolute;
+		bottom: 0%;
+		left: 40%;
+	}
+	#opus li{
+		width: 50%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.contant .cotleft .an{
+		width: 10%;
+	}
+	.contant .cotright{
+		width: 100%;
+	}
+}
+/*@media only screen and (max-width: 768px)  {
+	.index{
+		height: 250px;
+	}
+	.index .jianjie{
+		width: 3%;
+		font-size: 10px;
+	}
+	.logo .lo1{
+		font-size: 2px;
+	}
+	.logo .lo2{
+		font-size: 2px;
+	}
+	.logo .lo3{
+		font-size: 2px;
+	}
+	.logo .lo4{
+		font-size: 2px;
+	}
+	.logo{
+		width:50%;
+		height: 70%;
+		top: 10%;
+	}
+	#xushu{
+		left: 20%;
+		font-size: 3px;
+	}
+	#xushu .xus1{
+		font-size: 6px;
+	}
+	#xushu .xus2{
+		font-size: 3px;
+	}
+	#xushu .xus3{
+		font-size: 6px;
+	}
+	#perpson .perleft{
+		width: 100%;
+		height: 150px;
+	}
+	#perpson .perleft .perimg{
+		left: 10%;
+	}
+	#perpson .perleft h1:nth-of-type(1){
+	position: absolute;
+	left: 40%;
+	top:20%;
+	font-size: 5px;
+	margin-bottom: 3px;
+}
+#perpson .perleft h1:nth-of-type(2){
+	position: absolute;
+	left: 40%;
+	top:28%;
+	font-size: 5px;
+	margin-bottom: 3px;
+}
+#perpson .perleft h1:nth-of-type(3){
+	position: absolute;
+	left:40%;
+	top:36%;
+	font-size: 5px;
+	margin-bottom: 3px;
+}
+#perpson .bg{
+	height: auto;
+}
+#perpson .bg .pert{
+	height: auto;
+}
+
+#perpson .perright{
+	width: 100%;
+}
+#perpson .perright ul li{
+	height: 75px;
+}
+#perpson .perright{
+	height: 200px;
+}
+	#perpson .bg .catain .pert .perleft h1{
+		float: left;
+		font-size: 5px;
+	margin-bottom: 3px;
+	}
+	#perpson .perb ul li{
+		width: 100%;
+		position: relative;
+	}
+	#perpson .perb .jine1{
+		position: absolute;
+		top: 5%;
+		left: 50%;
+	}
+	#perpson .perb .jine2{
+		position: absolute;
+		top: 5%;
+		left: 50%;
+	}
+	#perpson .perb .jine3{
+		position: absolute;
+		top: 5%;
+		left: 50%;
+	}
+	#perpson .perb .jine4{
+		position: absolute;
+		top: 5%;
+		left: 50%;
+	}
+	#perpson .perb ul li .pict{
+		position: absolute;
+		bottom: 0%;
+		left: 40%;
+	}
+	#opus li{
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.contant .cotleft .an{
+		width: 15%;
+	}
+	.contant .cotright{
+		width: 100%;
+	}
+}*/
