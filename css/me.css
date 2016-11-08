@@ -347,6 +347,10 @@
 	color: #A5A5A5;
 	text-align: center;
 }
+#opus li h3 a{
+	color: #A5A5A5;
+	text-align: center;
+}
 /*4*/
 .contant{
 	width: 100%;
@@ -526,7 +530,7 @@
 		width: 100%;
 	}
 }
-/*@media only screen and (max-width: 768px)  {
+@media only screen and (max-width: 768px)  {
 	.index{
 		height: 250px;
 	}
@@ -573,22 +577,22 @@
 	}
 	#perpson .perleft h1:nth-of-type(1){
 	position: absolute;
-	left: 40%;
+	left: 70%;
 	top:20%;
 	font-size: 5px;
-	margin-bottom: 3px;
+	padding-bottom: 3px;
 }
 #perpson .perleft h1:nth-of-type(2){
 	position: absolute;
-	left: 40%;
-	top:28%;
+	left: 70%;
+	top:35%;
 	font-size: 5px;
 	margin-bottom: 3px;
 }
 #perpson .perleft h1:nth-of-type(3){
 	position: absolute;
-	left:40%;
-	top:36%;
+	left:70%;
+	top:50%;
 	font-size: 5px;
 	margin-bottom: 3px;
 }
@@ -609,9 +613,12 @@
 	height: 200px;
 }
 	#perpson .bg .catain .pert .perleft h1{
+		overflow: hidden;
+		width: 85px;
+		height: 20px;
 		float: left;
 		font-size: 5px;
-	margin-bottom: 3px;
+	padding-bottom: 3px;
 	}
 	#perpson .perb ul li{
 		width: 100%;
@@ -653,4 +660,4 @@
 	.contant .cotright{
 		width: 100%;
 	}
-}*/
+}
