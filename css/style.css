@@ -122,14 +122,14 @@ a:hover {
     position: relative;
     margin-left: 220px;
 }
-#container section {
+#container .xx1 {
     padding: 60px;
 }
-#container section {
-    background: #f7f8f9;
+#container .xx1 {
+    background: #FFFFFF;
 }
 /*透明度图片切换*/
- #container section.home {
+ #container .xx1.home {
     padding: 0px;
 }
 .home {
@@ -151,16 +151,15 @@ a:hover {
     top: 0;
     background:rgba(0, 0, 0, 0.5);
 }
+.slides-container{
+    position: relative;
+}
 .home .slides-container li{
-    display: none;
-    /*left: 1349px;
+    /*display: none;*/
+    opacity: 0;
     position: absolute;
-    overflow: hidden;
-    height: 100%;
-    width: 1349px;
-    top: 0px;
-    z-index: 0;
-    opacity: 1;*/
+    right: 0;
+    top: 0;
 }
 
 .home .slide-text h2 {
@@ -184,7 +183,7 @@ a:hover {
 .home .slides-navigation {
     margin: 0 auto;
     position: absolute;
-    z-index: 99999999;
+    z-index: 9999;
     width: 100%;
     bottom: 0%;
     height: 45px;
@@ -217,16 +216,10 @@ a:hover {
 	max-width: 100%;
 }
 .home .slides-container .firstx{
-	display: block;
+	/*display: block;*/
+    opacity: 1;
 	position: relative;
-    /*left: 1349px;
-    position: absolute;
-    overflow: hidden;
-    height: 100%;
-    width: 1349px;
-    top: 0px;
-    z-index: 2;
-    opacity: 1;*/
+
 }
 h1, .h1, h2, .h2, h3, .h3 {
     margin-top: 20px;
@@ -262,7 +255,6 @@ p {
 }
 .service {
 	position: relative;
-	/*overflow: hidden;*/
     width: 100%;
     height: 320px;
     margin: 40px 0;
@@ -272,6 +264,7 @@ p {
     transition: all 0.3s ease;
 }
 .row {
+	height: auto;
     margin-left: -15px;
     margin-right: -15px;
     text-align: center;
@@ -283,13 +276,14 @@ p {
     display: inline-block;
     margin-bottom: 0px;
     padding: 10px;
-    background: #F7F8F9;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     font-size: 50px;
     color: #9B59B6;
 }
-
+.service .icon-holder .gbg{
+    background: #FFF;
+}
 .service .heading {
     position: relative;
     top: 80px;
@@ -391,8 +385,9 @@ p {
     width: 100px;
     text-align: center;
     line-height: 80px;
-    /*font-weight: bold;*/
     letter-spacing: 0.01em;
+    margin-bottom: 5px;
+    font-size: 14px;
 }
 .client-photo:hover{
 	color: #DDAD02;
@@ -545,10 +540,9 @@ p {
 }
 
 /**/
-#container section.gray {
+#container .xx1.gray {
 	display: block;
-    overflow: hidden;
-    background: #F7F8F9;
+    background: #FFF;
 }
 .mg-bt-80 {
     margin-bottom: 80px;
@@ -625,19 +619,19 @@ form input.form-control {
 }
 
 /**/
-footer {
+#footer {
     background: #fff;
     padding: 40px;
 }
-footer p {
+#footer p {
     font-size: 14px;
     text-align: center;
 }
-footer .social{
+#footer .social{
     text-align: center;
     margin-bottom: 20px;
 }
-footer .social a {
+#footer .social a {
     width: 31px;
     height: 31px;
     position: relative;
@@ -649,11 +643,11 @@ footer .social a {
     font-size: 16px;
     border: 1px solid #202020;
 }
-footer .social a:hover {
+#footer .social a:hover {
     background: #202020;
     color: #FFF;
 }
-footer .social a i{
+#footer .social a i{
     line-height: 28px;
 }
 /*返回顶部*/
@@ -747,12 +741,18 @@ footer .social a i{
     font-size: 18px;
     line-height: 27px;
     }
+    .service:hover .heading {
+        top: -50px;
+    }
   
 }
 @media only screen and (min-width: 872px)) and (max-width: 992px) {
 	.col-sm-6 {
     width: 50%;
 }
+.service:hover .heading {
+        top: -50px;
+    }
 }
 
 @media (min-width: 872px){
@@ -762,6 +762,12 @@ footer .social a i{
 }
 }
 @media only screen and (max-width: 871px){
+    .header-content h2 {
+    font-size: 25px;
+}
+.header-content h3 {
+    font-size: 17px;
+}
 	#menu {
 	    position: absolute;
 	    width: 100%;
@@ -802,10 +808,15 @@ footer .social a i{
 	 	width: 100%;
 	 	display: block;
 	  	text-align: left;
+        z-index: 99999999999;
   }
     #menu .navbar .menudetail .homepage>li>a{
 	    padding: 0;
 	    padding-left: 20px;
+        text-align: left;
+        position: absolute;
+        left: 0;
+        z-index: 99999999999;
   }
   #container {
 	  	overflow: hidden;
@@ -832,7 +843,7 @@ footer .social a i{
     	padding: 0;
     }
     .service:hover .heading {
-        top: -10px;
+        top: -50px;
     }
     .service:hover .icon-holder i{
 	    top: -40px;
@@ -842,7 +853,7 @@ footer .social a i{
 	    font-family: 'Raleway', sans-serif;
 	    font-weight: 200;
 	    margin-bottom: 30px;
-	    font-size: 24px;
+	    font-size: 17px;
 	    line-height: 1.1;
     }
     .col-md-6{
@@ -859,4 +870,7 @@ footer .social a i{
     .btn{
     	font-size: 14px;
     }
+}
+.active{
+    display: block !important;
 }
