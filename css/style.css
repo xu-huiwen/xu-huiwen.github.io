@@ -909,7 +909,7 @@ form input.form-control {
     	padding: 0;
     }
     .service:hover .heading {
-        top: -50px;
+        top: -60px;
     }
     .service:hover .icon-holder i{
 	    top: -40px;
