@@ -12,6 +12,9 @@
 		$.ajax({
 			type: 'GET',
 			url: 'https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/space_history?host_uid=517491339',
+			header: {
+					'Content-Type': 'multipart/form-data',
+				},
 			success: function(res) {
 				console.log(res)
 				
